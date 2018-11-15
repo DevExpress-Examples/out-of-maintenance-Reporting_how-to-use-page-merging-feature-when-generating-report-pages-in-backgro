@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [AdditionalReport.cs](./CS/PageMerging/AdditionalReport.cs) (VB: [AdditionalReport.vb](./VB/PageMerging/AdditionalReport.vb))
+* [Form1.cs](./CS/PageMerging/Form1.cs) (VB: [Form1.vb](./VB/PageMerging/Form1.vb))
+* [MainReport.cs](./CS/PageMerging/MainReport.cs) (VB: [MainReport.vb](./VB/PageMerging/MainReport.vb))
+* [Program.cs](./CS/PageMerging/Program.cs) (VB: [Program.vb](./VB/PageMerging/Program.vb))
+<!-- default file list end -->
 # How to use page merging feature when generating report pages in background
 
 
