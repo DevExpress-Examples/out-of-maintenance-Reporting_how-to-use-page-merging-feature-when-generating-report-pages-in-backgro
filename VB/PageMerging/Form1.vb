@@ -34,7 +34,10 @@ Namespace PageMerging
 		Private Sub report_AfterPrint(ByVal sender As Object, ByVal e As EventArgs)
 			Dim add As New AdditionalReport()
 			add.CreateDocument()
-			CType(sender, MainReport).Pages.AddRange(add.Pages)
-		End Sub
+            CType(sender, MainReport).ModifyDocument(
+                Sub(x)
+                    x.AddPages(add.Pages)
+                End Sub)
+        End Sub
 	End Class
 End Namespace
