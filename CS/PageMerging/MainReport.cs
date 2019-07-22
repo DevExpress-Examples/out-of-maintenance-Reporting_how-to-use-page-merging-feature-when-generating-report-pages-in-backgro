@@ -10,10 +10,5 @@ namespace PageMerging {
         public MainReport() {
             InitializeComponent();
         }
-
-        private void Detail_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
-           // Thread.Sleep(50);
-        }
-
     }
 }
