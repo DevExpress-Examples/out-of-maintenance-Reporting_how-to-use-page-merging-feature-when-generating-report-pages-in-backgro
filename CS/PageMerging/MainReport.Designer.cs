@@ -59,7 +59,6 @@ namespace PageMerging {
             this.Detail.Name = "Detail";
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.Detail.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.Detail_BeforePrint);
             // 
             // xrLabel4
             // 
@@ -134,7 +133,7 @@ namespace PageMerging {
             // 
             // sqlDataSource1
             // 
-            this.sqlDataSource1.ConnectionName = "PageMerging.Properties.Settings.nwindConnectionString";
+            this.sqlDataSource1.ConnectionName = "nwind";
             this.sqlDataSource1.Name = "sqlDataSource1";
             columnExpression1.ColumnName = "OrderID";
             table1.Name = "Order Details";

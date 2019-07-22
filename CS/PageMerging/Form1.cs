@@ -25,15 +25,6 @@ namespace PageMerging {
         private XtraReport CreateMainReport() {
             MainReport mainReport = new MainReport();
             mainReport.AfterPrint += MainReport_AfterPrint;
-            DataSet1 ds = new DataSet1();
-            Random rnd = new Random(DateTime.Now.Millisecond);
-            for(int i = 0; i < 50; i++) {
-                int OrderID = rnd.Next(100);
-                int ProductID = rnd.Next(50);
-                if(ds.Order_Details.FindByOrderIDProductID(OrderID, ProductID) == null)
-                    ds.Order_Details.AddOrder_DetailsRow(OrderID, ProductID, (decimal)Math.Round(rnd.NextDouble() * 50, 2), 5, 0.0f);
-            }
-            mainReport.DataSource = ds;
             mainReport.CreateDocument();
             return mainReport;
         }

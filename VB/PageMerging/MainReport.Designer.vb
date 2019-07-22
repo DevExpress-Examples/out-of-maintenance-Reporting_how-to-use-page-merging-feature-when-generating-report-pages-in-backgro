@@ -126,7 +126,7 @@ Namespace PageMerging
             '
             'SqlDataSource1
             '
-            Me.SqlDataSource1.ConnectionName = "PageMerging.Properties.Settings.nwindConnectionString"
+            Me.SqlDataSource1.ConnectionName = "nwind"
             Me.SqlDataSource1.Name = "SqlDataSource1"
             ColumnExpression1.ColumnName = "OrderID"
             Table1.Name = "Order Details"
