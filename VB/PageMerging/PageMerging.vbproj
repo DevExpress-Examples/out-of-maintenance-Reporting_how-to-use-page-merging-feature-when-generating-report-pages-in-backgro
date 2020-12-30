@@ -7,10 +7,13 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C542117B-8842-4C2C-BA0A-C7CBCD1316B6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>PageMerging</AssemblyName>
-    <FileUpgradeFlags></FileUpgradeFlags>
-    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
@@ -42,7 +45,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <PlatformTarget>x86</PlatformTarget>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -62,7 +65,6 @@
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Diagnostics" />
     <Import Include="System.Linq" />
-    <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
@@ -71,59 +73,73 @@
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.Charts.v13.1.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Charts.v13.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.Printing.v13.1.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Printing.v13.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.Data.v13.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.Utils.v13.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.XtraCharts.v13.1.Wizard.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v13.1.Wizard.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.XtraCharts.v13.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.XtraEditors.v13.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.XtraPivotGrid.v13.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPivotGrid.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.PivotGrid.v13.1.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.PivotGrid.v13.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.XtraPrinting.v13.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.XtraReports.v13.1.Extensions.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v13.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.Utils.v13.1.UI.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v13.1.UI.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.Sparkline.v13.1.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Sparkline.v13.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>C:\DXDlls\13.1.14\DevExpress.XtraReports.v13.1.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v13.1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
