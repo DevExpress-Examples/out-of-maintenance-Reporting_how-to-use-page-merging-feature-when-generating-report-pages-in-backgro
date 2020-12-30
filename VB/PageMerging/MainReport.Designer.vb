@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace PageMerging
+﻿Namespace PageMerging
 	Partial Public Class MainReport
 		''' <summary>
 		''' Required designer variable.
@@ -45,7 +43,8 @@ Namespace PageMerging
 			Me.Detail.Name = "Detail"
 			Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
 			Me.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-'			Me.Detail.BeforePrint += New System.Drawing.Printing.PrintEventHandler(Me.Detail_BeforePrint);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Detail.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.Detail_BeforePrint);
 			' 
 			' xrLabel4
 			' 

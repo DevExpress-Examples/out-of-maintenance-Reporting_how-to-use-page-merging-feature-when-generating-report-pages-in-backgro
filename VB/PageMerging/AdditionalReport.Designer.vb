@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace PageMerging
+﻿Namespace PageMerging
 	Partial Public Class AdditionalReport
 		''' <summary>
 		''' Required designer variable.
